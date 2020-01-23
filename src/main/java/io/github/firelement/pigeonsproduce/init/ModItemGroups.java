@@ -8,7 +8,7 @@ import net.minecraft.item.Items;
 import java.util.function.Supplier;
 
 public class ModItemGroups {
-    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(PigeonsProduce.MODID, () -> new ItemStack(Items.LIGHT_BLUE_BANNER));
+    public static final ItemGroup MOD_ITEM_GROUP = new ModItemGroup(PigeonsProduce.MODID, () -> new ItemStack(ModItems.EXAMPLE_ITEM ));
     public static class ModItemGroup extends ItemGroup{
         private final Supplier<ItemStack> iconSupplier;
 

@@ -6,7 +6,7 @@ import org.apache.logging.log4j.Logger;
 
 @Mod(PigeonsProduce.MODID)
 public class PigeonsProduce {
-    public final static String MODID = "pigeons_produce";
+    public final static String MODID = "pigeonsproduce";
     public static final Logger LOGGER = LogManager.getLogger(MODID);
 
     public PigeonsProduce() {

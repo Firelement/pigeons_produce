@@ -1,4 +1,5 @@
 {
-  "item.examplemod.example_item": "Tomato",
-  "itemGroup.examplemod": " Pigeon's Produce"
+  "item.pigeonsproduce.example_item": "Tomato",
+  "item.pigeonsproduce.cheese": "Cheese",
+  "itemGroup.pigeonsproduce": "Pigeon's Produce"
 }

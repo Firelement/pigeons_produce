@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "examplemod:mod_furnace"
+          "name": "pigeonsproduce:mod_furnace"
         }
       ],
       "conditions": [

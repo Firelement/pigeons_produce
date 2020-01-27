@@ -60,6 +60,7 @@ public class ModFurnaceBlock extends HorizontalBlock {
      * @deprecated Call via {@link BlockState#getLightValue())}
      * Implementing/overriding is fine.
      */
+    @Override
     public int getLightValue(BlockState state) {
         return state.get(BURNING) ? super.getLightValue(state) : 0;
     }

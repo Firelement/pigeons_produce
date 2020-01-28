@@ -160,4 +160,8 @@ public class ModFurnaceBlock extends HorizontalBlock {
         return state.rotate(mirrorIn.toRotation(state.get(HORIZONTAL_FACING)));
     }
 
+    @Override
+    public void onBlockHarvested(World worldIn, BlockPos pos, BlockState state, PlayerEntity player) {
+        super.onBlockHarvested(worldIn, pos, state, player);
+    }
 }

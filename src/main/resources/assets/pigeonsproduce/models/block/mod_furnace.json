@@ -1,0 +1,12 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "particle": "pigeonsproduce:block/mod_furnace_side",
+    "up": "pigeonsproduce:block/mod_furnace_top_off",
+    "down": "pigeonsproduce:block/mod_furnace_side",
+    "north": "pigeonsproduce:block/mod_furnace_front",
+    "south": "pigeonsproduce:block/mod_furnace_side",
+    "east": "pigeonsproduce:block/mod_furnace_side",
+    "west": "pigeonsproduce:block/mod_furnace_side"
+  }
+}

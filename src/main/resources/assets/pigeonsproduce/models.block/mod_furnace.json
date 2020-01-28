@@ -1,6 +1,0 @@
-{
-  "parent": "block/furnace",
-  "textures": {
-    "front": "pigeonsproduce:blocks/stove_front"
-  }
-}

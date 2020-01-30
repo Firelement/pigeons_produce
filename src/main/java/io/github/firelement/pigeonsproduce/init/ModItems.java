@@ -18,22 +18,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(1).saturation(0.6F).build())));
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(3).saturation(0.6F).build())));
-    public static final Item TOMATO_SEEDS = register("tomato_seeds", new BlockNamedItem(ModBlocks.TOMATO_PLANT, (new Item.Properties()).group(ItemGroup.MATERIALS)));
-        private static Item register(Block blockIn) {
-            return register(new BlockItem(blockIn, new Item.Properties()));
-        }
-
-    private static Item register(Block blockIn, ItemGroup itemGroupIn) {
-        return register(new BlockItem(blockIn, (new Item.Properties()).group(itemGroupIn)));
-    }
-
-    private static Item register(BlockItem blockItemIn) {
-        return register(blockItemIn.getBlock(), blockItemIn);
-    }
-
-    protected static Item register(Block blockIn, Item itemIn) {
-        return register(Registry.BLOCK.getKey(blockIn), itemIn);
-    }
+    public static final Item TOMATO_SEEDS = register("tomato_seeds", new BlockNamedItem(ModBlocks.TOMATO_PLANT, (new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
 
     private static Item register(String key, Item itemIn) {
         return register(new ResourceLocation(key), itemIn);

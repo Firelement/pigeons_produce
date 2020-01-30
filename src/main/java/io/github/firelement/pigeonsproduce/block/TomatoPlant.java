@@ -44,7 +44,7 @@ public class TomatoPlant extends CropsBlock implements IGrowable {
 
     @Override
     protected IItemProvider getSeedsItem() {
-        return ModItems.TOMATO;
+        return ModItems.TOMATO_SEEDS;
     }
 
     public IntegerProperty getAgeProperty()

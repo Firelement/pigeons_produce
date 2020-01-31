@@ -26,6 +26,7 @@ public class PigeonsProduce {
 
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
 

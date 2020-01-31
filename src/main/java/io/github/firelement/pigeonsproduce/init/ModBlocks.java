@@ -20,7 +20,7 @@ public class ModBlocks {
     public static final Block TOMATO_PLANT = register("tomato_plant", new TomatoPlant("tomato_plant"));
 
     //Block.Properties.create(Material.PLANTS).doesNotBlockMovement().tickRandomly().sound(SoundType.CROP).hardnessAndResistance(0,0)
-    private static Block register(String key, Block p_222382_1_) {
-        return Registry.register(Registry.BLOCK, key, p_222382_1_);
+   private static Block register(String key, Block p_222382_1_) {
+       return Registry.register(Registry.BLOCK, key, p_222382_1_);
     }
 }

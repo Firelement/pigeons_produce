@@ -1,10 +1,13 @@
 package io.github.firelement.pigeonsproduce.client;
 
 import io.github.firelement.pigeonsproduce.PigeonsProduce;
+import io.github.firelement.pigeonsproduce.block.ModBlocks;
 import io.github.firelement.pigeonsproduce.client.gui.ModFurnaceScreen;
 import io.github.firelement.pigeonsproduce.init.ModContainerTypes;
 import io.github.firelement.pigeonsproduce.init.ModTileEntityTypes;
 import net.minecraft.client.gui.ScreenManager;
+import net.minecraft.client.renderer.RenderType;
+import net.minecraft.client.renderer.RenderTypeLookup;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.client.registry.RenderingRegistry;
@@ -35,6 +38,7 @@ public final class ClientModEventSubscriber {
     public static void onFMLClientSetupEvent(final FMLClientSetupEvent event) {
         // Register ContainerType Screens
         ScreenManager.registerFactory(ModContainerTypes.MOD_FURNACE.get(), ModFurnaceScreen::new);
+        RenderTypeLookup.setRenderLayer(ModBlocks.TOMATO_BLOCK, RenderType.cutout());
         LOGGER.debug("Registered ContainerType Screens");
 
     }

@@ -2,7 +2,7 @@ package io.github.firelement.pigeonsproduce.tileentity;
 
 import io.github.firelement.pigeonsproduce.block.ModFurnaceBlock;
 import io.github.firelement.pigeonsproduce.container.ModFurnaceContainer;
-import io.github.firelement.pigeonsproduce.init.ModBlocks;
+import io.github.firelement.pigeonsproduce.block.ModBlocks;
 import io.github.firelement.pigeonsproduce.init.ModTileEntityTypes;
 import net.minecraft.block.BlockState;
 import net.minecraft.entity.player.PlayerEntity;

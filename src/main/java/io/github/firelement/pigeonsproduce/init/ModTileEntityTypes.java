@@ -1,6 +1,7 @@
 package io.github.firelement.pigeonsproduce.init;
 
 import io.github.firelement.pigeonsproduce.PigeonsProduce;
+import io.github.firelement.pigeonsproduce.block.ModBlocks;
 import io.github.firelement.pigeonsproduce.tileentity.ModFurnaceTileEntity;
 import net.minecraft.tileentity.TileEntityType;
 import net.minecraftforge.fml.RegistryObject;

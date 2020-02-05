@@ -7,10 +7,14 @@ import net.minecraft.item.Item;
 import java.util.Map;
 
 public class SeedItem extends BlockNamedItem {
-    public static final Map<Block, Item> BLOCK_TO_ITEM = net.minecraftforge.registries.GameData.getBlockItemMap();
-
-    public SeedItem(Block blockIn, Properties properties) {
+    public SeedItem(Block blockIn, Item.Properties properties) {
         super(blockIn, properties);
     }
 
+    /**
+     * Returns the unlocalized name of this item.
+     */
+    public String getTranslationKey() {
+        return this.getDefaultTranslationKey();
+    }
 }

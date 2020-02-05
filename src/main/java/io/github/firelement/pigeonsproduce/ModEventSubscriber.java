@@ -5,7 +5,7 @@ package io.github.firelement.pigeonsproduce;
         import com.google.common.base.Preconditions;
         import io.github.firelement.pigeonsproduce.config.ConfigHelper;
         import io.github.firelement.pigeonsproduce.config.ConfigHolder;
-        import io.github.firelement.pigeonsproduce.init.ModBlocks;
+        import io.github.firelement.pigeonsproduce.block.ModBlocks;
         import io.github.firelement.pigeonsproduce.init.ModItemGroups;
         import net.minecraft.item.BlockItem;
         import net.minecraft.item.Item;

@@ -1,5 +1,6 @@
 package io.github.firelement.pigeonsproduce;
 
+import io.github.firelement.pigeonsproduce.block.ModBlocks;
 import io.github.firelement.pigeonsproduce.config.ConfigHolder;
 import io.github.firelement.pigeonsproduce.init.*;
 import net.minecraft.item.Item;
@@ -26,6 +27,7 @@ public class PigeonsProduce {
 
         ModBlocks.BLOCKS.register(modEventBus);
         ModItems.ITEMS.register(modEventBus);
+
         ModContainerTypes.CONTAINER_TYPES.register(modEventBus);
         ModTileEntityTypes.TILE_ENTITY_TYPES.register(modEventBus);
 

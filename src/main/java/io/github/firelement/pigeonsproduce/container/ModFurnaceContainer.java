@@ -1,6 +1,6 @@
 package io.github.firelement.pigeonsproduce.container;
 
-import io.github.firelement.pigeonsproduce.init.ModBlocks;
+import io.github.firelement.pigeonsproduce.block.ModBlocks;
 import io.github.firelement.pigeonsproduce.init.ModContainerTypes;
 import io.github.firelement.pigeonsproduce.tileentity.ModFurnaceTileEntity;
 import net.minecraft.client.network.play.ClientPlayNetHandler;

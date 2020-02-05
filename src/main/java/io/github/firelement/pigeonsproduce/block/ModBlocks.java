@@ -24,8 +24,6 @@ public class ModBlocks {
     public static final DeferredRegister<Block> BLOCKS = new DeferredRegister<>(ForgeRegistries.BLOCKS, PigeonsProduce.MODID);
 
     public static final RegistryObject<Block> MOD_FURNACE = BLOCKS.register("mod_furnace", () -> new ModFurnaceBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.5f).lightValue(13)));
-    //public static final RegistryObject<Block> TOMATO_PLANT = BLOCKS.register("tomato_plant", () -> new TomatoPlant("tomato_plant"));
-   // public static final Block TOMATO_BLOCK = register("tomato_block", new TomatoPlant("tomato_block"));
     public static final Block TOMATO_BLOCK = register("pigeonsproduce:tomato_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
 
     private static Block register(String key, Block p_222382_1_) {

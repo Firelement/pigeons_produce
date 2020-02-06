@@ -3,6 +3,8 @@
   "item.pigeonsproduce.tomato_seeds": "Tomato Seeds",
   "item.pigeonsproduce.cheese": "Cheese",
   "item.pigeonsproduce.knife": "Knife",
+  "item.pigeonsproduce.apple_vinegar": "Apple Vinegar",
+  "item.pigeonsproduce.salt": "Salt",
   "itemGroup.pigeonsproduce": "Pigeon's Produce",
   "block.pigeonsproduce.mod_furnace": "Stove",
   "gui.pigeonsproduce.fuelBurnTimeProgress": "Fuel burn time %s/%s",

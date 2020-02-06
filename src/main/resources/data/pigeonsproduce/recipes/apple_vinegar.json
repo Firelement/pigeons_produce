@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "minecraft:potion"
+    },
+
+    {
+      "item": "minecraft:apple"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:apple_vinegar",
+    "count": 2
+  }
+}

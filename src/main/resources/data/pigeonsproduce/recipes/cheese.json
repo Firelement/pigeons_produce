@@ -1,20 +1,22 @@
 {
-  "type": "minecraft:crafting_shaped",
-  "pattern": [
-    "",
-    "MMM"
-  ],
-  "key": {
-    "M": {
-      "item": "minecraft:milk"
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "minecraft:milk_bucket"
     },
-    "T": {
-      "item": "minecraft:torch"
+
+    {
+      "item": "pigeonsproduce:apple_vinegar"
     }
-  },
-  "result": {
-    "item": "pigeonsproduce:mod_furnace",
-    "count": 1
-  },
-  "group": "stuff"
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:cheese",
+    "count": 3
+  }
 }

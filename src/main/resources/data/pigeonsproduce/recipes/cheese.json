@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "",
+    "MMM"
+  ],
+  "key": {
+    "M": {
+      "item": "minecraft:milk"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "pigeonsproduce:mod_furnace",
+    "count": 1
+  },
+  "group": "stuff"
+}

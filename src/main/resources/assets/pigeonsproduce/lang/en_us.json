@@ -2,8 +2,9 @@
   "item.pigeonsproduce.example_item": "Tomato",
   "item.pigeonsproduce.tomato_seeds": "Tomato Seeds",
   "item.pigeonsproduce.cheese": "Cheese",
+  "item.pigeonsproduce.knife": "Knife",
   "itemGroup.pigeonsproduce": "Pigeon's Produce",
-  "block.pigeonsproduce.mod_furnace": "Stove"
-
-
+  "block.pigeonsproduce.mod_furnace": "Stove",
+  "gui.pigeonsproduce.fuelBurnTimeProgress": "Fuel burn time %s/%s",
+  "gui.pigeonsproduce.smeltTimeProgress": "Smelt time %s/%s"
 }

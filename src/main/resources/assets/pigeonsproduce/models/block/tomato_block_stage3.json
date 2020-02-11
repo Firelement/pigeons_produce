@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "pigeonsproduce:block/tomato_block_stage3"
+  }
+}

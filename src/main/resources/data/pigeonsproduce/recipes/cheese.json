@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "minecraft:milk_bucket"
+    },
+
+    {
+      "item": "pigeonsproduce:apple_vinegar"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:cheese",
+    "count": 3
+  }
+}

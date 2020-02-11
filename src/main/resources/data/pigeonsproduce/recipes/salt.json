@@ -1,0 +1,10 @@
+{
+"type": "minecraft:smelting",
+"ingredient": {
+"item": "minecraft:water_bucket"
+},
+"result": "pigeonsproduce:salt",
+  "count": 2,
+"experience": 0.7,
+"cookingtime": 200
+}

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "minecraft:beef"
+    },
+
+    {
+      "item": "pigeonsproduce:knife"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:ground_meat",
+    "count": 1
+  }
+}

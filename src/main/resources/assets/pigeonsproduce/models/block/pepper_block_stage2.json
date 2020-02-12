@@ -1,0 +1,6 @@
+{
+  "parent": "block/crop",
+  "textures": {
+    "crop": "pigeonsproduce:block/pepper_block_stage2"
+  }
+}

@@ -39,6 +39,8 @@ public final class ClientModEventSubscriber {
         // Register ContainerType Screens
         ScreenManager.registerFactory(ModContainerTypes.MOD_FURNACE.get(), ModFurnaceScreen::new);
         RenderTypeLookup.setRenderLayer(ModBlocks.TOMATO_BLOCK, RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.PEPPER_BLOCK, RenderType.cutout());
+
         LOGGER.debug("Registered ContainerType Screens");
 
     }

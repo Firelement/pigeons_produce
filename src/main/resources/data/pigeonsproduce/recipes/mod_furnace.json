@@ -1,13 +1,16 @@
 {
   "type": "minecraft:crafting_shaped",
   "pattern": [
-    "ccc",
+    "III",
     "cTc",
     "ccc"
   ],
   "key": {
     "c": {
       "item": "minecraft:cobblestone"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
     },
     "T": {
       "item": "minecraft:torch"

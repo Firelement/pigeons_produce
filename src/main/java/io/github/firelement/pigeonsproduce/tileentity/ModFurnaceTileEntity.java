@@ -169,7 +169,8 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
                     if (smeltTimeLeft == -1) { // Item has not been smelted before
                         smeltTimeLeft = maxSmeltTime = getSmeltTime(input);
                     } else { // Item was already being smelted
-                        --smeltTimeLeft;
+                        smeltTimeLeft = (short) (smeltTimeLeft - 1.5);
+
                         if (smeltTimeLeft == 0) {
                             inventory.insertItem(OUTPUT_SLOT, result, false);
                             if (input.hasContainerItem()) {
@@ -226,13 +227,13 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
     }
 
     /**
-     * Mimics the code in {@link AbstractFurnaceTileEntity#func_214005_h()}
+     * Mimics the code in
      *
      * @return The custom smelt time or 200 if there is no recipe for the input
      */
     private short getSmeltTime(final ItemStack input) {
         return getRecipe(input)
-                .map(AbstractCookingRecipe::getCookTime)
+                .map((AbstractCookingRecipe::getCookTime))
                 .orElse(200)
                 .shortValue();
     }
@@ -334,7 +335,7 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
      * Get an NBT compound to sync to the client with SPacketChunkData, used for initial loading of the
      * chunk or when many blocks change at once.
      * This compound comes back to you client-side in {@link #handleUpdateTag}
-     * The default implementation ({@link TileEntity#handleUpdateTag}) calls {@link #writeInternal)}
+     * The default implementation ({@link TileEntity#handleUpdateTag}) calls
      * which doesn't save any of our extra data so we override it to call {@link #write} instead
      */
     @Nonnull
@@ -361,7 +362,7 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
 
     /**
      * Called from {@link NetworkHooks#openGui}
-     * (which is called from {@link ElectricFurnaceBlock#onBlockActivated} on the logical server)
+     * (which is called from  on the logical server)
      *
      * @return The logical-server-side Container for this TileEntity
      */

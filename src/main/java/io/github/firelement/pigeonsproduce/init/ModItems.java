@@ -22,6 +22,8 @@ public class ModItems {
     public static final RegistryObject<Item> APPLE_VINEGAR = ITEMS.register("apple_vinegar", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final RegistryObject<Item> PEPPER = ITEMS.register("pepper", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
+    //Other Items
+    public static final RegistryObject<Item> PLASTIC = ITEMS.register("plastic", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
 
     //Weapons / Tools
     public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () -> new ModSwordItem(ItemTier.STONE, 1, -1f,(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP))));

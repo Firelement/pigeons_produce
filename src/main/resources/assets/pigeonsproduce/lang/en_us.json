@@ -12,6 +12,9 @@
   "item.pigeonsproduce.pizza_dough": "Pizza Dough",
   "item.pigeonsproduce.ground_meat": "Ground Meat",
   "item.pigeonsproduce.pepperoni": "Pepperoni",
+  "item.pigeonsproduce.uncooked_pizza": "Uncooked Pizza",
+  "item.pigeonsproduce.pizza": "Pizza",
+
   "itemGroup.pigeonsproduce": "Pigeon's Produce",
   "block.pigeonsproduce.mod_furnace": "Stove",
   "gui.pigeonsproduce.fuelBurnTimeProgress": "Fuel burn time %s/%s",

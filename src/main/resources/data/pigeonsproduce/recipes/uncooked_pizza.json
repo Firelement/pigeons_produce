@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "PPP",
+    "CCC",
+    "TDT"
+  ],
+  "key": {
+    "P": {
+      "item": "pigeonsproduce:pepperoni"
+    },
+    "C": {
+      "item": "pigeonsproduce:cheese"
+    },
+    "T": {
+      "item": "pigeonsproduce:example_item"
+    },
+    "D": {
+      "item": "pigeonsproduce:pizza_dough"
+    }
+
+  },
+  "result": {
+    "item": "pigeonsproduce:uncooked_pizza",
+    "count": 1
+  },
+  "group": "stuff"
+}

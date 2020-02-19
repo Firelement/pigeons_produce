@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " D ",
+    "D D",
+    " D "
+  ],
+  "key": {
+    "D": {
+      "item": "pigeonsproduce:dough"
+    }
+  },
+  "result": {
+    "item": "pigeonsproduce:pizza_dough",
+    "count": 1
+  },
+  "group": "stuff"
+}

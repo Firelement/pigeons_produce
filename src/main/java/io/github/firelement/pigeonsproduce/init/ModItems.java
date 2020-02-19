@@ -17,6 +17,7 @@ public class ModItems {
     public static final RegistryObject<Item> EXAMPLE_ITEM = ITEMS.register("example_item", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(1).saturation(0.6F).build())));
     public static final RegistryObject<Item> CHEESE = ITEMS.register("cheese", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(3).saturation(0.6F).build())));
     public static final RegistryObject<Item> GROUND_MEAT = ITEMS.register("ground_meat", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(3).saturation(0.6F).build())));
+    public static final RegistryObject<Item> PEPPERONI = ITEMS.register("pepperoni", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(2).saturation(0.6F).build())));
 
     //Non-Eatable Foods
     public static final RegistryObject<Item> APPLE_VINEGAR = ITEMS.register("apple_vinegar", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));

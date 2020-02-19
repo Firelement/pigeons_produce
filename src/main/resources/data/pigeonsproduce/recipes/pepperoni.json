@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "pigeonsproduce:ground_meat"
+    },
+
+    {
+      "item": "pigeonsproduce:salt"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:pepperoni",
+    "count": 3
+  }
+}

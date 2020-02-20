@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "pigeonsproduce:knife"
+    },
+
+    {
+      "item": "pigeonsproduce:pizza"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:pizza_slice",
+    "count": 4
+  }
+}

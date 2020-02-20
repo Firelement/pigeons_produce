@@ -2,6 +2,7 @@ package io.github.firelement.pigeonsproduce.init;
 
 import io.github.firelement.pigeonsproduce.PigeonsProduce;
 import io.github.firelement.pigeonsproduce.block.ModBlocks;
+import io.github.firelement.pigeonsproduce.item.ModKnifeReturnable;
 import io.github.firelement.pigeonsproduce.item.ModSwordItem;
 import net.minecraft.item.*;
 import net.minecraft.util.ResourceLocation;
@@ -33,7 +34,7 @@ public class ModItems {
     public static final RegistryObject<Item> PLASTIC = ITEMS.register("plastic", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
 
     //Weapons / Tools
-    public static final RegistryObject<Item> KNIFE = ITEMS.register("knife", () -> new ModSwordItem(ItemTier.STONE, 1, -1f,(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP))));
+    public static final Item KNIFE = register("knife", new ModKnifeReturnable(ItemTier.STONE, 1, -1f,(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP))));
     //Plant Seeds
     public static final Item TOMATO_SEEDS = register("tomato_seeds", new BlockNamedItem(ModBlocks.TOMATO_BLOCK,(new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final Item PEPPER_SEEDS = register("pepper_seeds", new BlockNamedItem(ModBlocks.PEPPER_BLOCK,(new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));

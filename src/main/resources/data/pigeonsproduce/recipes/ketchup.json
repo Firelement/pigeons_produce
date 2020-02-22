@@ -1,0 +1,30 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "pigeonsproduce:apple_vinegar"
+    },
+    {
+      "item": "minecraft:potion"
+    },
+    {
+      "item": "pigeonsproduce:example_item"
+    },
+    {
+      "item": "pigeonsproduce:example_item"
+    },
+    {
+      "item": "pigeonsproduce:salt"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:ketchup",
+    "count": 2
+  }
+}

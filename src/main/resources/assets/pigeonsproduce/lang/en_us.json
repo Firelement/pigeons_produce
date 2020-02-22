@@ -16,6 +16,7 @@
   "item.pigeonsproduce.pizza": "Pizza",
   "item.pigeonsproduce.pizza_slice": "Slice Of Pizza",
   "item.pigeonsproduce.cheese_slice": "Slice Of Cheese",
+  "item.pigeonsproduce.ketchup": "Ketchup",
   "itemGroup.pigeonsproduce": "Pigeon's Produce",
   "block.pigeonsproduce.mod_furnace": "Stove",
   "gui.pigeonsproduce.fuelBurnTimeProgress": "Fuel burn time %s/%s",

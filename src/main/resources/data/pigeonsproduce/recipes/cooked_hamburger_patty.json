@@ -1,0 +1,10 @@
+{
+"type": "minecraft:smelting",
+"ingredient": {
+"item": "pigeonsproduce:hamburger_patty"
+},
+"result": "pigeonsproduce:cooked_hamburger_patty",
+  "count": 1,
+"experience": 0.7,
+"cookingtime": 400
+}

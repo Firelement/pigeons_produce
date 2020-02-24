@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "H",
+    "H"
+  ],
+  "key": {
+    "H": {
+      "item": "pigeonsproduce:ground_meat"
+    }
+  },
+  "result": {
+    "item": "pigeonsproduce:hamburger_patty",
+    "count": 3
+  },
+  "group": "stuff"
+}

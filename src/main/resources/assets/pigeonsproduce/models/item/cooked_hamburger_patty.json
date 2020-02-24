@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "pigeonsproduce:item/hamburger_patty"
+    "layer0": "pigeonsproduce:item/cooked_hamburger_patty"
   }
 }

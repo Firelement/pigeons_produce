@@ -100,7 +100,6 @@ public class ModFurnaceBlock extends HorizontalBlock {
         if (!worldIn.isRemote) {
             final TileEntity tileEntity = worldIn.getTileEntity(pos);
             if (tileEntity instanceof ModFurnaceTileEntity)
-                LOGGER.debug("Hello I made it bitch");
                 NetworkHooks.openGui((ServerPlayerEntity) player, (ModFurnaceTileEntity) tileEntity, pos);
         }
         return ActionResultType.SUCCESS;

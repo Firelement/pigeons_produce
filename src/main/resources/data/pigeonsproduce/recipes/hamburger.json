@@ -1,0 +1,33 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "pigeonsproduce:sliced_bread"
+    },
+
+    {
+      "item": "pigeonsproduce:sliced_bread"
+    },
+    {
+    "item": "pigeonsproduce:cooked_hamburger_patty"
+    },
+    {
+      "item": "pigeonsproduce:ketchup"
+    },
+    {
+    "item": "pigeonsproduce:lettuce"
+    },
+    {
+      "item": "pigeonsproduce:cheese_slice"
+    }
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:hamburger",
+    "count": 1
+  }
+}

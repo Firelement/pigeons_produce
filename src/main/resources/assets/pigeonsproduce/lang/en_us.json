@@ -22,6 +22,7 @@
   "item.pigeonsproduce.hamburger_patty": "Hamburger Patty",
   "item.pigeonsproduce.cooked_hamburger_patty": "Cooked Hamburger Patty",
   "item.pigeonsproduce.sliced_bread": "Sliced Bread",
+  "item.pigeonsproduce.hamburger": "Hamburger",
   "itemGroup.pigeonsproduce": "Pigeon's Produce",
   "block.pigeonsproduce.mod_furnace": "Stove",
   "gui.pigeonsproduce.fuelBurnTimeProgress": "Fuel burn time %s/%s",

@@ -26,6 +26,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> MOD_FURNACE = BLOCKS.register("mod_furnace", () -> new ModFurnaceBlock(Block.Properties.create(Material.ROCK).hardnessAndResistance(3.5f).lightValue(13)));
     public static final Block TOMATO_BLOCK = register("pigeonsproduce:tomato_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
     public static final Block PEPPER_BLOCK = register("pigeonsproduce:pepper_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
+    public static final Block LETTUCE_BLOCK = register("pigeonsproduce:lettuce_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
 
     private static Block register(String key, Block p_222382_1_) {
 

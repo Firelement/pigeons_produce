@@ -37,9 +37,6 @@ import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 import java.util.Optional;
 
-/**
- * @author Cadiboo
- */
 public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEntity, INamedContainerProvider {
 
     public static final int FUEL_SLOT = 0;

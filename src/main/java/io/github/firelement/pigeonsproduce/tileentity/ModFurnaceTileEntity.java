@@ -32,6 +32,7 @@ import net.minecraftforge.items.CapabilityItemHandler;
 import net.minecraftforge.items.IItemHandlerModifiable;
 import net.minecraftforge.items.ItemStackHandler;
 import net.minecraftforge.items.wrapper.RangedWrapper;
+import org.lwjgl.system.CallbackI;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -56,7 +57,7 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
                 case FUEL_SLOT:
                     return FurnaceTileEntity.isFuel(stack);
                 case INPUT_SLOT:
-                    return isInput(stack);
+                    return isInput(stack, false);
                 case OUTPUT_SLOT:
                     return isOutput(stack);
                 default:
@@ -96,12 +97,28 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
     /**
      * @return If the stack is not empty and has a smelting recipe associated with it
      */
-    private boolean isInput(final ItemStack stack) {
+    private boolean isInput(final ItemStack stack, boolean isFirst) {
         if (stack.isEmpty())
             return false;
+        if(getResult(stack).toString().contains("ingot")) return false;
+        if(getResult(stack).toString().contains("stone")) return false;
+        if(getResult(stack).toString().contains("clay")) return false;
+        if(getResult(stack).toString().contains("glass")) return false;
+        if(getResult(stack).toString().contains("brick")) return false;
+        if(getResult(stack).toString().contains("coal")) return false;
+        if(stack.toString().contains("ore")) return false;
         return getRecipe(stack).isPresent();
     }
 
+    private ItemStack shrinkInput(final ItemStack stack){
+        ItemStack cloneStack = stack.getStack().copy();
+        cloneStack.shrink(1);
+        InventoryHelper.spawnItemStack(world, pos.getX(), pos.getY(), pos.getZ(), cloneStack);
+        int shrinkage = stack.getStack().getCount();
+        shrinkage -=1;
+        stack.shrink(shrinkage);
+        return stack;
+    }
     /**
      * @return If the stack's item is equal to the result of smelting our input
      */
@@ -153,24 +170,29 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
 
         // Smelting code
 
-        final ItemStack input = inventory.getStackInSlot(INPUT_SLOT);
+         ItemStack input = inventory.getStackInSlot(INPUT_SLOT);
+        if(input.getCount() > 1) {
+            input = shrinkInput(input);
+        }
         final ItemStack result = getResult(input).orElse(ItemStack.EMPTY);
 
-        if (!result.isEmpty() && isInput(input)) {
+        if (!result.isEmpty() && isInput(input,false)) {
             final boolean canInsertResultIntoOutput = inventory.insertItem(OUTPUT_SLOT, result, true).isEmpty();
             if (canInsertResultIntoOutput) {
                 if (!hasFuel)
+
                     if (burnFuel())
                         hasFuel = true;
                 if (hasFuel) {
                     if (smeltTimeLeft == -1) { // Item has not been smelted before
                         smeltTimeLeft = maxSmeltTime = getSmeltTime(input);
                     } else { // Item was already being smelted
-                        smeltTimeLeft = (short) (smeltTimeLeft - 1.5);
+                        smeltTimeLeft = (short) (smeltTimeLeft - 4);
 
                         if (smeltTimeLeft == 0) {
                             inventory.insertItem(OUTPUT_SLOT, result, false);
-                            if (input.hasContainerItem()) {
+
+                                if (input.hasContainerItem()) {
                                 final ItemStack containerStack = input.getContainerItem();
                                 input.shrink(1); // Shrink now to make space in the slot.
                                 insertOrDropStack(FUEL_SLOT, containerStack);
@@ -178,6 +200,14 @@ public class ModFurnaceTileEntity extends TileEntity implements ITickableTileEnt
                                 input.shrink(1);
                             }
                             inventory.setStackInSlot(INPUT_SLOT, input); // Update the data
+
+                            final Optional<ItemStack> res = getResult(inventory.getStackInSlot(OUTPUT_SLOT));
+                            if(res.isPresent()){
+                                inventory.insertItem(INPUT_SLOT,result,false);
+                                inventory.setStackInSlot(OUTPUT_SLOT , ItemStack.EMPTY);
+
+
+                            }
                             smeltTimeLeft = -1; // Set to -1 so we smelt the next stack on the next tick
                         }
                     }

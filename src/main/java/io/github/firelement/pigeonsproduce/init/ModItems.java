@@ -20,17 +20,19 @@ public class ModItems {
     public static final RegistryObject<Item> CHEESE_SLICE = ITEMS.register("cheese_slice", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(1).saturation(.75F).build())));
     public static final RegistryObject<Item> GROUND_MEAT = ITEMS.register("ground_meat", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(3).saturation(0F).build())));
     public static final RegistryObject<Item> PEPPERONI = ITEMS.register("pepperoni", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(2).saturation(0.5F).build())));
+    public static final RegistryObject<Item> BURNT_PIZZA = ITEMS.register("burnt_pizza", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(4).saturation(00).build())));
     public static final RegistryObject<Item> PIZZA = ITEMS.register("pizza", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(20).saturation(20).build())));
     public static final RegistryObject<Item> PIZZA_SLICE = ITEMS.register("pizza_slice", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(5).saturation(5).build())));
     public static final RegistryObject<Item> SLICED_BREAD = ITEMS.register("sliced_bread", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(2).saturation(0).build())));
     public static final RegistryObject<Item> LETTUCE = ITEMS.register("lettuce", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(3).saturation(1).build())));
     public static final RegistryObject<Item> HAMBURGER = ITEMS.register("hamburger", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(15).saturation(15).build())));
+    public static final RegistryObject<Item> COOKED_HAMBURGER_PATTY = ITEMS.register("cooked_hamburger_patty", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(9).saturation(7).build())));
+    public static final RegistryObject<Item> BURNT_HAMBURGER_PATTY = ITEMS.register("burnt_hamburger_patty", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(2).saturation(0).build())));
 
     //Non-Eatable Foods
     public static final RegistryObject<Item> APPLE_VINEGAR = ITEMS.register("apple_vinegar", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final RegistryObject<Item> KETCHUP = ITEMS.register("ketchup", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final RegistryObject<Item> HAMBURGER_PATTY = ITEMS.register("hamburger_patty", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
-    public static final RegistryObject<Item> COOKED_HAMBURGER_PATTY = ITEMS.register("cooked_hamburger_patty", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
 
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final RegistryObject<Item> PEPPER = ITEMS.register("pepper", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));

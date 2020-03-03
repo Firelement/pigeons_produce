@@ -2,6 +2,7 @@ package io.github.firelement.pigeonsproduce.init;
 
 import io.github.firelement.pigeonsproduce.PigeonsProduce;
 import io.github.firelement.pigeonsproduce.block.ModBlocks;
+import io.github.firelement.pigeonsproduce.item.ModItemReturnable;
 import io.github.firelement.pigeonsproduce.item.ModKnifeReturnable;
 import io.github.firelement.pigeonsproduce.item.ModSwordItem;
 import net.minecraft.item.*;
@@ -30,8 +31,8 @@ public class ModItems {
     public static final RegistryObject<Item> BURNT_HAMBURGER_PATTY = ITEMS.register("burnt_hamburger_patty", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP).food(new Food.Builder().hunger(2).saturation(0).build())));
 
     //Non-Eatable Foods
-    public static final RegistryObject<Item> APPLE_VINEGAR = ITEMS.register("apple_vinegar", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
-    public static final RegistryObject<Item> KETCHUP = ITEMS.register("ketchup", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
+    public static final RegistryObject<Item> APPLE_VINEGAR = ITEMS.register("apple_vinegar", () -> new ModItemReturnable(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
+    public static final RegistryObject<Item> KETCHUP = ITEMS.register("ketchup", () -> new ModItemReturnable(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final RegistryObject<Item> HAMBURGER_PATTY = ITEMS.register("hamburger_patty", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));
 
     public static final RegistryObject<Item> SALT = ITEMS.register("salt", () -> new Item(new Item.Properties().group(ModItemGroups.MOD_ITEM_GROUP)));

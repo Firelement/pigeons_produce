@@ -27,6 +27,7 @@ public class ModBlocks {
     public static final Block TOMATO_BLOCK = register("pigeonsproduce:tomato_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
     public static final Block PEPPER_BLOCK = register("pigeonsproduce:pepper_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
     public static final Block LETTUCE_BLOCK = register("pigeonsproduce:lettuce_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
+    public static final Block OLIVE_BLOCK = register("pigeonsproduce:olive_block", new CustomPlant(Block.Properties.create(Material.PLANTS).doesNotBlockMovement().hardnessAndResistance(0,0).tickRandomly().sound(SoundType.CROP)));
 
     private static Block register(String key, Block p_222382_1_) {
 

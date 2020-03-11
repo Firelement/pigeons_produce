@@ -3,6 +3,7 @@
   "item.pigeonsproduce.tomato_seeds": "Tomato Seeds",
   "item.pigeonsproduce.pepper_seeds": "Pepper Seeds",
   "item.pigeonsproduce.lettuce_seeds": "Lettuce Seeds",
+  "item.pigeonsproduce.olive_seeds": "Olive Seeds",
   "item.pigeonsproduce.lettuce": "Lettuce",
   "item.pigeonsproduce.cheese": "Cheese",
   "item.pigeonsproduce.knife": "Knife",
@@ -32,10 +33,8 @@
   "item.pigeonsproduce.spaghetti_meatball": "Spaghetti and Meatballs",
   "item.pigeonsproduce.cooked_meatball": "Cooked Meatball",
   "item.pigeonsproduce.burnt_meatball": "Burnt Meatball",
-
   "item.pigeonsproduce.olive_oil": "Olive Oil",
   "item.pigeonsproduce.uncooked_meatball": "Uncooked Meatball",
-
   "itemGroup.pigeonsproduce": "Pigeon's Produce",
   "block.pigeonsproduce.mod_furnace": "Stove",
   "gui.pigeonsproduce.fuelBurnTimeProgress": "Fuel burn time %s/%s",

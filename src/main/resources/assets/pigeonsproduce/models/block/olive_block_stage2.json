@@ -1,0 +1,6 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "pigeonsproduce:block/olive_block_stage2"
+  }
+}

@@ -58,6 +58,7 @@ public class ModItems {
     public static final Item TOMATO_SEEDS = register("tomato_seeds", new BlockNamedItem(ModBlocks.TOMATO_BLOCK,(new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final Item PEPPER_SEEDS = register("pepper_seeds", new BlockNamedItem(ModBlocks.PEPPER_BLOCK,(new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
     public static final Item LETTUCE_SEEDS = register("lettuce_seeds", new BlockNamedItem(ModBlocks.LETTUCE_BLOCK,(new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
+    public static final Item OLIVE_SEEDS = register("olive_seeds", new BlockNamedItem(ModBlocks.OLIVE_BLOCK,(new Item.Properties()).group(ModItemGroups.MOD_ITEM_GROUP)));
 
     private static Item register(String key, Item itemIn) {
         return register(new ResourceLocation("pigeonsproduce:" + key), itemIn);

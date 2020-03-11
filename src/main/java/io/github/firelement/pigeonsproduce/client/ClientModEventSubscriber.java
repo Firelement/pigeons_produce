@@ -41,6 +41,7 @@ public final class ClientModEventSubscriber {
         RenderTypeLookup.setRenderLayer(ModBlocks.TOMATO_BLOCK, RenderType.cutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.PEPPER_BLOCK, RenderType.cutout());
         RenderTypeLookup.setRenderLayer(ModBlocks.LETTUCE_BLOCK, RenderType.cutout());
+        RenderTypeLookup.setRenderLayer(ModBlocks.OLIVE_BLOCK, RenderType.cutout());
 
         LOGGER.debug("Registered ContainerType Screens");
 

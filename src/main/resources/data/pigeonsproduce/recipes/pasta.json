@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "pigeonsproduce:olive_oil"
+    },
+    {
+      "item": "pigeonsproduce:flour"
+    },
+
+    {
+      "item": "pigeonsproduce:salt"
+    },
+    {
+      "item": "minecraft:egg"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:pasta",
+    "count": 1
+  }
+}

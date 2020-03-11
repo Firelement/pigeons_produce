@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+
+  "ingredients":
+  [
+
+    {
+      "item": "pigeonsproduce:ground_meat"
+    },
+
+    {
+      "item": "pigeonsproduce:salt"
+    }
+
+  ],
+
+  "result":
+  {
+    "item": "pigeonsproduce:uncooked_meatball",
+    "count": 2
+  }
+}

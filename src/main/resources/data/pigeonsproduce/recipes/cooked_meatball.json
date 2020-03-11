@@ -1,0 +1,10 @@
+{
+"type": "minecraft:smelting",
+"ingredient": {
+"item": "pigeonsproduce:uncooked_meatball"
+},
+"result": "pigeonsproduce:cooked_meatball",
+  "count": 1,
+"experience": 0.7,
+"cookingtime": 1200
+}

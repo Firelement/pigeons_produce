@@ -5,18 +5,16 @@
   [
 
     {
-      "item": "minecraft:potion"
+      "item": "pigeonsproduce:pasta"
     },
-
     {
-      "item": "minecraft:apple"
+      "item": "pigeonsproduce:example_item"
     }
-
   ],
 
   "result":
   {
-    "item": "pigeonsproduce:apple_vinegar",
+    "item": "pigeonsproduce:spaghetti",
     "count": 1
   }
 }

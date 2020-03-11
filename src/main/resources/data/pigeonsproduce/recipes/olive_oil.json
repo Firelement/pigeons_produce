@@ -9,14 +9,14 @@
     },
 
     {
-      "item": "minecraft:apple"
+      "item": "pigeonsproduce:olives"
     }
 
   ],
 
   "result":
   {
-    "item": "pigeonsproduce:apple_vinegar",
+    "item": "pigeonsproduce:olive_oil",
     "count": 1
   }
 }

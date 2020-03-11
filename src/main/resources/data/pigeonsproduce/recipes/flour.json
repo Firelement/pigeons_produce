@@ -5,18 +5,18 @@
   [
 
     {
-      "item": "minecraft:potion"
+      "item": "minecraft:wheat"
     },
 
     {
-      "item": "minecraft:apple"
+      "item": "pigeonsproduce:knife"
     }
 
   ],
 
   "result":
   {
-    "item": "pigeonsproduce:apple_vinegar",
+    "item": "pigeonsproduce:flour",
     "count": 1
   }
 }

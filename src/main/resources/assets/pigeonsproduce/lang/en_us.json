@@ -25,6 +25,17 @@
   "item.pigeonsproduce.cooked_hamburger_patty": "Cooked Hamburger Patty",
   "item.pigeonsproduce.sliced_bread": "Sliced Bread",
   "item.pigeonsproduce.hamburger": "Hamburger",
+  "item.pigeonsproduce.flour": "Flour",
+  "item.pigeonsproduce.olives": "Olives",
+  "item.pigeonsproduce.pasta": "Pasta",
+  "item.pigeonsproduce.spaghetti": "Spaghetti",
+  "item.pigeonsproduce.spaghetti_meatball": "Spaghetti and Meatballs",
+  "item.pigeonsproduce.cooked_meatball": "Cooked Meatball",
+  "item.pigeonsproduce.burnt_meatball": "Burnt Meatball",
+
+  "item.pigeonsproduce.olive_oil": "Olive Oil",
+  "item.pigeonsproduce.uncooked_meatball": "uncooked_meatball",
+
   "itemGroup.pigeonsproduce": "Pigeon's Produce",
   "block.pigeonsproduce.mod_furnace": "Stove",
   "gui.pigeonsproduce.fuelBurnTimeProgress": "Fuel burn time %s/%s",
